@@ -1,13 +1,13 @@
 # feederReader
 reads, displays and sorts tar1090 aircraft.json ADSB data
 
-##Setup: 
-1.Update the script with your location: Latitude / Longitude - search for 'SET'.
-1.Update the URL to point to your tar10190 data. 
+## Setup: 
+1. Update the script with your location: Latitude / Longitude - search for 'SET'.
+1. Update the URL to point to your tar10190 data. 
 	- Eg URL      = "http://radiopi/tar1090/"
 	- Eg URL      = "http://localhost/tar1090/"
 
-##Usage:
+## Usage:
 This script takes real-time Aircraft ADSB output from tar10190/data/aircraft.json, parses it and displays it.
 It can help in understanding more about the information transmitted in ADSB transmissions.
 
