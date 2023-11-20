@@ -12,7 +12,7 @@ This script takes real-time Aircraft ADSB output from tar10190/data/aircraft.jso
 It can help in understanding more about the information transmitted in ADSB transmissions.
 
 The aircraft.json data is read into two lists, formatted and the raw JSON data. As the data is parsed, the script
-also captures stats: <s>
+also captures stats: **s**
 
 Cmd: s
 Real Time Flight information:
@@ -22,7 +22,7 @@ Real Time Flight information:
 	Total Exluded:  3		Furthest: Id: 44061b	Call:  XXXX	        Distance: 392.5km	  http://radiopi/tar1090/?icao=44061b
 	Total MLAT:     8
 
-The URL link can be included / excluded using the <l> command:
+The URL link can be included / excluded using the l command:
 
 Cmd: l
 Links is : False
@@ -34,7 +34,7 @@ Real Time Flight information:
 	Total Exluded:  3		  Furthest: Id: 44061b	Call:  XXXX	    Distance: 392.5km
 	Total MLAT:     8
 
-Flights are displayed by using the <f> command:
+Flights are displayed by using the **f** command:
 
 Cmd: f
 Aircraft with Positions: 57
@@ -48,7 +48,7 @@ Id: 4009da	Call: XXXX	    Swk: XXXX	Alt: 27000ft	Spd: 960km/h	Dist: 0.0km	    Hd
 Id: 407ac1	Call: TOM30T  	Swk: 7662	Alt: 35875ft	Spd: 960km/h	Dist: 326.3km	Hd: 44	Co-Ord: [52.45 / -3.90]	Cat: A3	MLAT: N	RSSI: -26.8
 
 
-Extended information can be displayed using the <x> command:
+Extended information can be displayed using the **x** command:
 
 Cmd: x
 Extended Format is: True
@@ -67,7 +67,7 @@ The formatted flights can be sorted by:
 \t<c>\tCall Sign\t\t<k>Squawk Code\t\t<t>\tAircraft Type
 \t<m>\tMLAT\t\t<^>\tRSSI - Signal Strength
 
-The <r> command can be used to Reverse the sort order.
+The r command can be used to Reverse the sort order.
 
 Cmd: r
 Reverse is: True
@@ -88,11 +88,10 @@ Id: 39e682	Call: AFR1886 	Swk: 5612	Alt: 38000ft	Spd: 902km/h	Dist: 240.2km	Hd: 
 Id: 3c70c9	Call: GEC8188 	Swk: 6240	Alt: 32000ft	Spd: 988km/h	Dist: 188.2km	Hd: 278	Co-Ord: [53.37 / -1.00]	Cat: A5	MLAT: N	RSSI: -14.6
 Id: 400796	Call: LOG7J   	Swk: 7736	Alt: 36000ft	Spd: 888km/h	Dist: 107.6km	Hd: 12	Co-Ord: [55.78 / -2.62]	Cat: XX	MLAT: Y	RSSI: -13.8
 
-The data can be refreshed using the <g< command and updates the stats, formatted and raw JSON data.
+The data can be refreshed using the **g** command and updates the stats, formatted and raw JSON data.
 
-The raw JSON data can be viewed using the <j> command for a better understanding of the data.
-"""
-HELP_STR2 = """
+The raw JSON data can be viewed using the **j** command for a better understanding of the data.
+
 Cmd: j
 {"hex": "80153d", "alt_baro": 35000, "alt_geom": 35200, "gs": 532.9, "track": 124.9, "baro_rate": 0, "squawk": "2221", "lat": 55.785129, "lon": -4.924793, "nic": 8, "rc": 186, "seen_pos": 12.2, "version": 0, "nac_p": 8, "nac_v": 1, "sil": 2, "sil_type": "unknown", "mlat": [], "tisb": [], "messages": 41, "seen": 0.9, "rssi": -26.2}
 {"hex": "47bfb3", "flight": "NSZ5333 ", "alt_baro": 38000, "alt_geom": 37650, "gs": 503.5, "tas": 454, "track": 210.7, "track_rate": 0.0, "roll": 0.2, "baro_rate": 0, "squawk": "2006", "emergency": "none", "category": "A3", "nav_qnh": 1013.6, "nav_altitude_mcp": 38016, "nav_altitude_fms": 38000, "nav_heading": 218.0, "version": 2, "nic_baro": 1, "nac_p": 11, "nac_v": 2, "sil": 3, "sil_type": "perhour", "gva": 2, "sda": 2, "mlat": [], "tisb": [], "messages": 133, "seen": 0.1, "rssi": -25.6}
