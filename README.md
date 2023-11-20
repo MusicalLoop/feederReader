@@ -14,8 +14,8 @@ It can help in understanding more about the information transmitted in ADSB tran
 The aircraft.json data is read into two lists, formatted and the raw JSON data. As the data is parsed, the script
 also captures stats: **s**
 
-Cmd: s
-Real Time Flight information:
+``Cmd: s
+``Real Time Flight information:
 
 	Total Aircraft: 57		Highest:  Id: 4010ee	Call:  XXXX	      Altitude: 48100m	  http://radiopi/tar1090/?icao=4010ee
 	With Positions: 42		Fastest:  Id: 4bb183	Call:  THY29M  	  Speed:    1012km/h	http://radiopi/tar1090/?icao=4bb183
@@ -24,10 +24,10 @@ Real Time Flight information:
 
 The URL link can be included / excluded using the l command:
 
-Cmd: l
-Links is : False
-Cmd: s
-Real Time Flight information:
+>Cmd: l
+>Links is : False
+>Cmd: s
+>Real Time Flight information:
 
 	Total Aircraft: 57		Highest:  Id: 4010ee	Call:  XXXX	    Altitude: 48100m
 	With Positions: 42		Fastest:  Id: 4bb183	Call:  THY29M  	Speed:    1012km/h
